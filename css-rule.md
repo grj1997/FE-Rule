@@ -319,4 +319,13 @@ $color-black: #000;>
     border-top-right-radius: 3px;
 }
 ```
+```scss写法
+写后代选择器时，需要指定父选择器，同样的父选择器会重复写好多次
+scss嵌套的方式规避上述问题,增加css可读性
+.element{
+    margin-bottom: 10px;
+    .child-one{
+        background-color: red;
+    }
+}
 
